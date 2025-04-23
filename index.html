@@ -1,1 +1,146 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos da Inteligência Artificial nos Media</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Imagem de fundo estática -->
+    <div id="ia-background"></div>
+
+    <!-- Botão flutuante do cérebro para abrir o menu -->
+    <button id="sidebar-fab" title="Abrir menu">
+        <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="Abrir menu IA"/>
+    </button>
+
+    <!-- Barra Lateral -->
+    <aside id="sidebar" class="closed">
+        <div class="logo-area" id="logo-toggle" tabindex="0" title="Fechar menu">
+            <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="Logo IA" id="logo-img">
+            <h1 class="brand-title">IA Media</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#ia-generativa">O que é IA?</a></li>
+                <li><a href="#ia-fake-news">IA e Fake News</a></li>
+                <li><a href="#produto-servico">Produto com IA</a></li>
+                <li><a href="#uso-etico">Uso Ético</a></li>
+                <li><a href="#impactos">Impactos no Mercado</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Overlay para mobile/PC -->
+    <div id="sidebar-overlay"></div>
+
+    <!-- Conteúdo Principal -->
+    <main id="content">
+        <!-- Página Inicial -->
+        <section id="home" class="section">
+            <div class="content-container">
+                <h1>O Impacto da Inteligência Artificial nos Media</h1>
+                <p>A Inteligência Artificial está transformando os media e o mercado de trabalho. Este site explora suas aplicações, riscos e soluções para o uso ético dessa tecnologia.</p>
+                <a href="#ia-generativa" class="cta-btn">Explorar o Tema</a>
+            </div>
+        </section>
+
+        <!-- O que é a IA e a IA Generativa -->
+        <section id="ia-generativa" class="section">
+            <div class="content-container">
+                <h2>O que é a IA e a IA Generativa?</h2>
+                <div class="card">
+                    <p><strong>Inteligência Artificial (IA)</strong> refere-se à simulação de processos inteligentes em máquinas, permitindo que elas aprendam, raciocinem e resolvam problemas.</p>
+                    <p><strong>IA Generativa</strong> é um subcampo que permite a criação de conteúdo original, como textos, imagens e sons.</p>
+                    <div class="image-box">
+                        <img src="ia-art.jpg" alt="Exemplo IA Generativa">
+                    </div>
+                    <p>Exemplo: <a href="https://openai.com/dall-e" target="_blank">DALL-E</a>, uma IA que gera imagens a partir de descrições textuais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IA e Fake News -->
+        <section id="ia-fake-news" class="section">
+            <div class="content-container">
+                <h2>IA e Fake News</h2>
+                <div class="card">
+                    <p>A IA pode ser utilizada para criar e disseminar fake news, manipulando imagens, vídeos e textos. Isso representa uma ameaça para a credibilidade das informações online.</p>
+                    <div class="image-box">
+                        <button class="spoiler-btn" id="spoiler-btn">
+                            Mostrar imagem (falsa, gerada por IA)
+                        </button>
+                        <div class="spoiler-img" id="spoiler-img" style="display:none;">
+                            <div class="spoiler-warning">
+                                <strong>Aviso:</strong> Esta imagem é falsa e foi gerada por Inteligência Artificial para fins de demonstração.
+                            </div>
+                            <img src="fake-imagem-ai_0.jpg" alt="IA e Fake News">
+                        </div>
+                    </div>
+                    <p><strong>Exemplo:</strong> O uso de deepfakes, onde vídeos falsificados são criados com IA, fazendo parecer que uma pessoa disse algo que nunca aconteceu.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposta de Produto/Serviço com IA -->
+        <section id="produto-servico" class="section">
+            <div class="content-container">
+                <h2>Proposta de Produto ou Serviço com IA</h2>
+                <div class="card">
+                    <h3>IA Check <span class="badge">Novo!</span></h3>
+                    <p>Um serviço de verificação de notícias em tempo real, utilizando IA para identificar fontes confiáveis e detectar desinformação.</p>
+                    <p><strong>Público-alvo:</strong> Usuários de redes sociais e consumidores de notícias que buscam fontes confiáveis.</p>
+                    <div class="image-box">
+                        <img src="iaChk.jpg" alt="IA Check App" width="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recomendações para Uso Ético -->
+        <section id="uso-etico" class="section">
+            <div class="content-container">
+                <h2>Recomendações para Uso Ético da IA nos Media</h2>
+                <div class="recommendations">
+                    <div class="recommendation">
+                        <h3><span class="icon">🔍</span> Transparência</h3>
+                        <p>As plataformas devem ser transparentes sobre o uso de IA e seu impacto nos usuários.</p>
+                    </div>
+                    <div class="recommendation">
+                        <h3><span class="icon">📚</span> Educação Digital</h3>
+                        <p>Promover a alfabetização digital e ensinar os usuários a identificar fake news.</p>
+                    </div>
+                    <div class="recommendation">
+                        <h3><span class="icon">🔐</span> Privacidade e Proteção de Dados</h3>
+                        <p>Garantir que dados pessoais utilizados por sistemas de IA sejam tratados com segurança, respeitando as leis de proteção de dados (como a GDPR e LGPD).</p>
+                    </div>
+                    <div class="recommendation">
+                        <h3><span class="icon">🤝</span> Inclusão e Diversidade</h3>
+                        <p>Desenvolver e treinar sistemas de IA para evitar vieses e promover a diversidade, garantindo que diferentes grupos sociais não sejam prejudicados por decisões automatizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impactos no Mercado de Trabalho -->
+        <section id="impactos" class="section">
+            <div class="content-container">
+                <h2>Impactos da IA no Mercado de Trabalho</h2>
+                <div class="card">
+                    <p>A IA está transformando o mercado de trabalho, criando novas oportunidades, mas também trazendo desafios devido à automação de tarefas.</p>
+                    <div class="image-box">
+                        <img src="iatrabalho.jpeg" alt="IA no Mercado de Trabalho">
+                    </div>
+                    <p><strong>Oportunidades:</strong> Novas profissões, como analista de dados, especialista em ética de IA e desenvolvedor de IA.</p>
+                    <p><strong>Desafios:</strong> A automação pode levar à perda de empregos em áreas como manufatura e atendimento ao cliente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
